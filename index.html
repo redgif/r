@@ -6,7 +6,7 @@
   border: none;
   color: white;
   padding: 1px 32px;
-  height: 40px;
+  height: 20px;
   text-align: left;
   text-decoration: none;
   margin-left: 0px;
@@ -51,10 +51,11 @@ var funArray = ["GrownRemarkableUnicorn","lightsalmoncolossallamb","sphericalast
 
 var rand = 0; 
 function myFunction(){
+rand = Math.floor(Math.random() * funArray.length);
+
 document.getElementById("butt").textContent = "CLICK HERE FOR THE NEXT VIDEO" + "    (" + rand + "/" + funArray.length +  ")";
 document.getElementById("butt2").textContent = "CLICK HERE FOR THE NEXT VIDEO" + "    (" + rand + "/" + funArray.length +  ")";
 
-rand = Math.floor(Math.random() * funArray.length);
 console.log(rand); 
 document.getElementById("fun").src = "https://www.redgifs.com/ifr/" + funArray[rand];
 
