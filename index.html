@@ -48,10 +48,14 @@ var funArray = ["attentivemortifiedgull","totaldimpledheron","acrobaticfatbluewh
 "equatorialslimlizard","essentialsqueakyfinwhale","constantshadywrasse","usablefirstsanddollar","dazzlingtrickytomtit","happytragicfiddlercrab",
  "medicallankyappaloosa","serenejitteryeastsiberianlaika","frivolousdimpledbilby","unhealthynotableiriomotecat","homelylamevelvetcrab","carefreekindbuck"]; 
 
-var rand = 0; 
+var rand = 0;
+document.getElementById("fun").src = "https://www.redgifs.com/ifr/" + funArray[0];
+ 
 function myFunction(){
-rand = Math.floor(Math.random() * funArray.length);
+//rand = Math.floor(Math.random() * funArray.length);
+rand = rand + 1;
 
+if (rand > funArray.length - 1){rand = 0;}
 document.getElementById("butt").textContent = "CLICK HERE FOR THE NEXT VIDEO" + "    (" + rand + "/" + funArray.length +  ")";
 document.getElementById("butt2").textContent = "CLICK HERE FOR THE NEXT VIDEO" + "    (" + rand + "/" + funArray.length +  ")";
 
